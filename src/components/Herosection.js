@@ -8,6 +8,7 @@ async function getConfession() {
       cache: "no-cache",
     }
   );
+  console.log("connected To database");
 
   if (!res.ok) {
     throw new Error(`Failed to fetch data: ${res.status} - ${res.statusText}`);
