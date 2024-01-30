@@ -3,12 +3,11 @@ import ConfessionList from "./ConfessionList";
 async function getConfession() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/confessions/` ||
-      `${NEXT_PUBLIC_API_URL}`,
+      `${NEXT_PUBLIC_API_URL}/api/confessions/`,
     {
       cache: "no-cache",
     }
   );
-  console.log("connected To database");
 
   if (!res.ok) {
     throw new Error(`Failed to fetch data: ${res.status} - ${res.statusText}`);
