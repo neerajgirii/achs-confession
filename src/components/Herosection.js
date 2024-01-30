@@ -3,7 +3,7 @@ import ConfessionList from "./ConfessionList";
 async function getConfession() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/confessions/` ||
-      `${NEXT_PUBLIC_API_URL}/api/confessions/`,
+      `${NEXT_PUBLIC_API_URL}`,
     {
       cache: "no-cache",
     }
