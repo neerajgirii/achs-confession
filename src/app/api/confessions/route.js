@@ -26,6 +26,9 @@ export const GET = async () => {
     return NextResponse.json(responseGET, { status: 200 });
   } catch (err) {
     console.error("Error in GET route:", err);
-    return NextResponse.json({ message: "GET error" }, { status: 500 });
+    return NextResponse.json(
+      { message: `GET error: ${err.message}` },
+      { status: 500 }
+    );
   }
 };
