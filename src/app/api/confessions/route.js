@@ -25,6 +25,7 @@ export const GET = async () => {
     const responseGET = await prisma.confession.findMany();
     return NextResponse.json(responseGET, { status: 200 });
   } catch (err) {
-    NextResponse.json({ message: "GET error" }, { status: 500 });
+    console.error("Error in GET route:", err);
+    return NextResponse.json({ message: "GET error" }, { status: 500 });
   }
 };

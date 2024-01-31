@@ -2,7 +2,8 @@ import ConfessionList from "./ConfessionList";
 
 async function getConfession() {
   try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || NEXT_PUBLIC_API_URL;
+    const DEFAULT_API_URL = "https://achs-confession.vercel.app";
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || DEFAULT_API_URL;
     const res = await fetch(`${apiUrl}/api/confessions/`, {
       cache: "no-cache",
     });
@@ -26,6 +27,7 @@ async function getConfession() {
 const Herosection = async () => {
   try {
     const confessions = await getConfession();
+    console.log("Feteched confessions", confessions);
     return (
       <>
         <ConfessionList confessions={confessions} />
