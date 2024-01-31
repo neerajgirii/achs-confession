@@ -46,24 +46,24 @@ const AddConfession = () => {
               <input
                 className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
-                placeholder="Crush's Name"
+                placeholder="Topic Of Confession"
                 name="crushName"
                 autoComplete="off"
                 value={inputs.crushName || ""}
                 onChange={handleChange}
               />
             </div>
-            <div className="flex items-center border-b border-black mt-4 bg-black rounded py-2">
+            {/* <div className="flex items-center border-b border-black mt-4 bg-black rounded py-2">
               <input
                 className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
-                placeholder="Crush's Class"
+                placeholder="Leave for Anonymous"
                 autoComplete="off"
                 name="crushClass"
                 value={inputs.crushClass || ""}
                 onChange={handleChange}
               />
-            </div>
+            </div> */}
             <div className="mt-4 flex items-center border-b border-black bg-black rounded">
               <textarea
                 className="appearance-none text-white bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none"
