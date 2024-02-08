@@ -42,7 +42,7 @@ const AddConfession = () => {
         </h1>
         <div className="flex justify-center">
           <form className="w-full max-w-sm p-6" onSubmit={handleSubmit}>
-            <div className="flex items-center border-b border-black py-2 bg-black rounded">
+            {/* <div className="flex items-center border-b border-black py-2 bg-black rounded">
               <input
                 className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="text"
@@ -52,7 +52,7 @@ const AddConfession = () => {
                 value={inputs.crushName || ""}
                 onChange={handleChange}
               />
-            </div>
+            </div> */}
             {/* <div className="flex items-center border-b border-black mt-4 bg-black rounded py-2">
               <input
                 className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
